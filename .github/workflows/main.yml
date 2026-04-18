@@ -1,4 +1,4 @@
-name: First workflow 
+name: First workflow
 
 on:
   push:
@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print a welcome message continue-on-error: 
-        run: echo "welcome to our first github actions workflow" 
+      - name: Print a welcome message
+        continue-on-error: true
+        run: echo "welcome to our first github actions workflow"
         
     
